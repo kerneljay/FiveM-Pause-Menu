@@ -2,6 +2,8 @@
 
 - A simple pause menu you can use on your FiveM server - this was created as a project to learn HTML, CSS and JS (vanilla)
 
+![alt text](image.png)
+
 # Features 
 - Easily configurable
 - Lightweight and performant
