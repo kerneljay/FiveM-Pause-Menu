@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Pause Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Jockey+One&display=swap" rel="stylesheet" />
+    <link href="css/pausemenu.css" rel="stylesheet" />
+</head>
+<body>
+<div class="pause_menu_container">
+    <div class="server_logo"></div>
+    <div class="another_container">
+        <div class="top_container">
+            <!-- FIRST FLEX BOX  -->
+            <div class="left_flex">
+                <div class="wiki">
+                    <div class="server_wiki_title"><span class="server_name">SERVER_NAME</span> WIKI</div>
+                    <div class="server_wiki_guide" data_action="wiki">Guides</div>
+                    <div class="server_wiki_info" data-server-name="FRAG">Read our Wiki for more information on what to do within <span class="server_name">SERVER_NAME</span> Roleplay</div>
+                </div>
+            </div>
+            <!-- SECOND FLEX BOX  -->
+            <div class="middle_flex">
+                <div class="information">
+                    <div class=information_title>
+                        <span class="server_info_title">Information</span>
+                        <span class="server_info_date_and_time">25/03/24 11:17:42</span>
+                    </div>
+                    <div class="server_player_info">
+                        <div id = "name" data_action = "copy_name" >Jay</div>
+                        <div data_action = "copy_perm_id">
+                            <span>ID:</span>
+                            <span id = "id">0</span>
+                        </div>
+                        <div data_action = "copy_job">
+                            <span >Employment:</span>
+                            <span id = "job">Unemployed</span>
+                        </div>
+
+                        <!-- <div>
+                            <span>Playtime:</span>
+                            <span id = "playtime">46</span>
+                        </div> -->
+
+                    </div>
+                </div>
+                <div class="rule_container">
+                    <div class="rules_buttons">
+                        <div class="rules_title_container">
+                            <div class="rules_title">Rules</div>
+                            <img src="./images/rules.png" alt="">
+                        </div>
+                        <div class="rules_button" data_action="rules">View Rules</div>
+                        <div class="rules_button" data_action="communityrules">View Community Rules</div>
+                        <div class="rules_button" data_action="gangrules">View Gang Rules</div>
+                    </div>
+                </div>
+            </div>
+            <!-- THIRD FLEX BOX  -->
+            <div class="right_flex">
+                <div class="right_top_buttons">
+                    <div class="right_flex_button_container" id="map_button">
+                        <div class="map_separator"></div>
+                        <div class="top_right_buttons_text" data_action="map">Map
+                            <div class="map_button_subtitle">Show The City Map</div>
+                        </div>
+                    </div>
+                    <div class="right_flex_button_container" id="settings_button">
+                        <div class="settings_separator"></div>
+                        <div class="top_right_buttons_text" data_action="settings">Settings
+                            <div class="settings_button_subtitle">Open Settings Interface</div>
+                        </div>
+                    </div>
+                    <div class="right_flex_button_container" id="disconnect_button">
+                        <div class="disconnect_separator"></div>
+                        <div class="top_right_buttons_text" data_action="disconnect">Disconnect
+                            <div class="disconnect_button_subtitle">See You Soon</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="support_section">
+                    <span class="support_title_container">SERVER SUPPORT</span>
+                    <div class="support_buttons">
+                        <div class="support_button"data_action="makeaticket">Make A Ticket
+                        </div>
+                        <!-- <div class="support_button">Join Us!</div> -->
+                        <div class="support_button"data_action="joindiscord">Discord</div>
+                        <div class="support_button">Player Count
+                            <span id = "playersOnline" class="player_count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BOTTOM BUTTONS  -->
+        <div class="bottom_container">
+            <div class="bottom_button" data_action="website">
+                <div class="bottom_button_img" id="website"></div>
+                <div class="bottom_button_title">Website
+                    <div class="bottom_button_heading">Visit Our Site</div>
+                </div>
+            </div>
+            <div class="bottom_button" data_action="x">
+                <div class="bottom_button_img" id="x"></div>
+                <div class="bottom_button_title">X
+                    <div class="bottom_button_heading">Follow Us</div>
+                </div>
+            </div>
+            <div class="bottom_button" data_action="store">
+                <div class="bottom_button_img" id="store"></div>
+                <div class="bottom_button_title">Store
+                    <div class="bottom_button_heading">Support Us</div>
+                </div>
+            </div>
+            <div class="bottom_button" data_action="dispute">
+                <div class="bottom_button_img" id="dispute"></div>
+                <div class="bottom_button_title">
+                    <h1 class= "disputeplayer_title">Dispute A Player</h1>
+                    <div class="bottom_button_heading" id = "bottom_button_custom_heading">Message Player</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script defer="defer"src="js/pausemenu.js"></script>
+<script defer="defer"src="../shared/config.js"></script>
+</body>
+</html>

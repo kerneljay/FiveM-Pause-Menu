@@ -1,0 +1,519 @@
+* {
+  box-sizing: border-box;
+}
+
+.pause_menu_container {
+  position: absolute;
+  width: 100dvw;
+  height: 100dvh;
+  background: linear-gradient(
+    rgba(81, 191, 255, 0.5450000166893005),
+    rgba(43, 177, 255, 0.3499999940395355)
+  );
+  top: 0;
+  left: 0;
+  display: flex;
+  padding-block: 3%;
+  padding-inline: 5%;
+  overflow: hidden;
+  align-items: center;
+  color: white;
+  font-family: "Josefin Sans";
+  cursor: default;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  user-select: none;
+  justify-content: center;
+  cursor: default;
+}
+
+.information {
+  height: 50%;
+  background: rgb(0 0 0 / 40%);
+  position: relative;
+  margin-bottom: 1%;
+  display: flex;
+  font-size: 1rem;
+  border-radius: 2dvh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.server_info_date_and_time {
+  font-family: Inter;
+  font-size: 1dvw;
+  color: #ffffffa3;
+}
+
+.server_info_title {
+  color: rgba(30, 142, 211, 1);
+  font-family: Inter;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 2dvw;
+}
+
+.server_player_info {
+  width: 90%;
+  height: 70%;
+  background: rgb(0 0 0 / 40%);
+  padding-inline: 2%;
+  padding-block: 1.2%;
+  font-size: 2dvw;
+  display: flex;
+  border-radius: 2dvh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.map_button_subtitle {
+  color: rgba(156, 221, 75, 1);
+  position: relative;
+  font-weight: Bold;
+  font-size: 0.7vw;
+}
+
+.right_flex_button_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  padding-left: 4dvw;
+  margin-bottom: 0.5dvh;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  border-radius: 2dvh;
+  background-position-x: 1dvw !important;
+  background: rgb(0 0 0 / 40%);
+}
+
+#settings_button {
+  background-image: url("../images/settings.png") !important;
+  background-size: 4dvh!important;
+  background-position-y: center !important;
+  background-repeat: no-repeat !important;
+}
+#map_button {
+  background-image: url("../images/map.png") !important;
+  background-size: 4dvh!important;
+  background-position-y: center !important;
+  background-repeat: no-repeat !important;
+}
+#disconnect_button {
+  background-image: url("../images/disconnect.png") !important;
+  background-size: 4dvh!important;
+  background-position-y: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.top_right_buttons_text {
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-size: 1.2dvw;
+  -webkit-text-stroke: thin;
+}
+
+.settings_button_subtitle {
+  color: rgba(55, 193, 242, 1);
+  position: relative;
+  font-weight: Bold;
+  font-size: 0.7vw;
+  text-wrap: nowrap;
+}
+
+.disconnect_button_subtitle {
+  color: rgba(189, 80, 74, 1);
+  font-weight: Bold;
+  font-size: 0.7vw;
+}
+
+.map_separator {
+  position: absolute;
+  height: 40%;
+  width: 0.2dvw;
+  background: #90df2d;
+  left: 0%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.settings_separator {
+  position: absolute;
+  height: 40%;
+  width: 0.2dvw;
+  background: #15bcf8;
+  left: 0%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.disconnect_separator {
+  position: absolute;
+  height: 40%;
+  width: 0.2dvw;
+  background: #b9332d;
+  left: 0%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.wiki {
+  background: rgb(0 0 0 / 40%);
+  position: relative;
+  border-radius: 2dvh;
+  text-align: center;
+  background-image: url("../images/wiki_background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  background-position: bottom;
+  justify-content: flex-start;
+  font-size: 1dvw;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.server_wiki_title {
+  position: relative;
+  margin-top: 15%;
+  height: max-content;
+  font-size: 2dvw;
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.server_wiki_guide {
+  width: 70%;
+  background: rgba(8, 139, 221, 1);
+  position: inherit;
+  align-content: center;
+  font-size: 1.5dvw;
+  padding: 0.5dvh;
+  font-family: 'Inter';
+  margin-top: 11%;
+  border-radius: 2dvh;
+  justify-content: center;
+  align-items: center;
+}
+
+.server_wiki_info {
+  width: 90%;
+  height: 15%;
+  background: rgb(79 138 152 / 25%);
+  position: relative;
+  margin-top: 15%;
+  border-radius: 2dvh;
+  padding: 2dvh;
+  font-size: 1dvw;
+  align-content: center;
+}
+
+.rule_container {
+  width: 100%;
+  height: 50%;
+  background: rgb(0 0 0 / 40%);
+  position: relative;
+  margin-top: 1%;
+  padding: 3%;
+  display: flex;
+  font-size: 1rem;
+  border-radius: 2dvh;
+  justify-content: center;
+  align-items: center;
+}
+
+.rules_button {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  padding-top: 0.5dvh;
+  background: rgb(0 0 0 / 40%);
+  border-radius: 2dvh;
+  align-items: center;
+  font-size: 1.35dvw;
+  justify-content: center;
+}
+
+.rules_title_container {
+  width: 90%;
+  height: 8dvh;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  padding-inline: 2%;
+  font-size: 2dvw;
+  color: green;
+  text-transform: uppercase;
+  -webkit-text-stroke: thin;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.support_section {
+  width: 100%;
+  height: 70%;
+  background: rgb(0 0 0 / 40%);
+  position: relative;
+  display: flex;
+  border-radius: 2dvh;
+  background-image: url("../images/support_background.png");
+  background-size: 40dvh;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.support_button {
+  width: 100%;
+  flex: 1;
+  background: rgb(0 0 0 / 90%);
+  position: relative;
+  display: flex;
+  padding-left: 0dvw;
+  border-radius: 2dvh;
+  margin-bottom: 2vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+}
+
+.support_title_container {
+  color: rgb(164 88 217 / 84%);
+  font-family: Inter;
+  padding: 1.2dvw;
+  font-size: 1.5dvw;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.player_count {
+  margin-left: 1dvw;
+  color: rgba(255, 255, 255, 1);
+  font-family: Josefin Sans;
+  font-weight: Bold;
+  font-size: 4dvh;
+  text-align: center;
+}
+
+.bottom_button {
+  width: 30dvw;
+  height: 9dvh;
+  background: rgb(0 0 0 / 40%);
+  position: relative;
+  border-radius: 2dvh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.bottom_button_img {
+  width: 5dvw;
+  height: 8dvh;
+  display: flex;
+  /* overflow: hidden; */
+  justify-content: flex-start;
+}
+
+.bottom_button_title {
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-size: 2.6dvh;
+  white-space: nowrap;
+  margin-bottom: 6%;
+  margin-left: 1dvw;
+  flex-direction: column;
+}
+
+.server_logo {
+  width: 100dvw;
+  height: 100dvh;
+  background: url("../images/server_logo.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: 2dvh;
+  background-size: 11dvh;
+  position: absolute;
+  z-index: 9999999;
+  pointer-events: none;
+  user-select: none;
+}
+
+.another_container {
+  height: 90%;
+  width: 90%;
+  top: 6%;
+  background: #000000b8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2dvh;
+  padding: 2%;
+}
+
+.information_title {
+  width: 100%;
+  height: 25%;
+  padding: 3%;
+  font-size: 1rem;
+  gap: 26%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.right_top_buttons {
+  position: relative;
+  bottom: 0%;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left_flex {
+  height: 100%;
+  width: 30dvw;
+  display: flex;
+  padding-right: 0.5%;
+}
+
+.right_flex {
+  height: 100%;
+  width: 25dvw;
+  padding-left: 0.5%;
+}
+
+.middle_flex {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 60dvw;
+  padding-inline: 0.5%;
+  flex-direction: column;
+}
+
+.rules_buttons {
+  width: 98%;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  row-gap: 1dvh;
+  align-items: flex-end;
+  align-content: center;
+  justify-content: center;
+}
+
+.rules_title_container > img {
+  width: 7%;
+  overflow: hidden;
+  border-radius: 1dvh;
+}
+
+.support_buttons {
+  height: 30dvh;
+  display: flex;
+  position: relative;
+  top: 0dvh;
+  flex-direction: column;
+  margin-inline: 5%;
+  font-size: 2.2dvh;
+  justify-content: space-evenly;
+}
+
+.top_container {
+  height: 85%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.bottom_container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    bottom: 0%;
+    gap: 1%;
+    padding-top: 2%;
+}
+
+.bottom_button_heading {
+  font-size: 1.5dvh;
+  margin-top: 1dvh;
+}
+
+.server_player_info > div {
+  margin-bottom: 1dvh;
+}
+
+.rules_title{
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+#support_discord {
+  background-image: url("../images/discord.png");
+  background-repeat: no-repeat;
+  background-position-x: 5dvw;
+  background-position-y: center;
+  background-size: 5dvh;
+}
+
+#x {
+  background: url("../images/x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#dispute {
+  background: url("../images/dispute.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#store {
+  background: url("../images/store.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#website {
+  background: url("../images/website.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.disputeplayer_title {
+  margin: 0;
+  font-size: 2.6dvh;
+  font-weight: 100 !important;
+}
+
+
+.server_name {
+  margin-right: 0.4dvw; /* Adjust as needed */
+}
